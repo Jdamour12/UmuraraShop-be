@@ -18,6 +18,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: 'ok' });
+});
 
 app.use("/api/v1", authRouther);
 app.use("/api/v1", categoryRouter);
