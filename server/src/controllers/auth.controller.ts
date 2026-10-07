@@ -28,10 +28,17 @@ export const createAccount = async (req:Request, res:Response) =>{
         password: hashedPassword
     });
 
-    await sendWelcomeEmail (email, firstName);
+    let welcomeEmailSent = true;
+
+    try {
+        await sendWelcomeEmail(email, firstName);
+    } catch (error) {
+        console.error("Failed to send welcome email:", error);
+    }
 
     return res.status(201).json({
         message: "User registered successfully",
+        welcomeEmailSent,
         user: {
             id: user._id,
             firstName: user.firstName,
