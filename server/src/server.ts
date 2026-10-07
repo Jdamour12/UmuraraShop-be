@@ -13,7 +13,7 @@ import { orderRouter } from "./routers/order.router";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT;
+const port = Number(process.env.PORT) || 3000;
 
 const allowedOrigins = process.env.CLIENT_ORIGIN
     ?.split(",")
