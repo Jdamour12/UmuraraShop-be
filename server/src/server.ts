@@ -68,7 +68,7 @@ const options = {
                 url: "http://localhost:3000/"
             },
             {
-                url: "https://umurara-shop.onrender.com/"
+                url: "https://umurarashop.onrender.com/"
             }
         ]
     },
