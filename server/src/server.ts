@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 import swaggerJsDoc from "swagger-jsdoc";
 import swaggerUI from "swagger-ui-express"
 import {connectDB} from "./config/database"
@@ -14,6 +15,16 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT;
 
+const allowedOrigins = process.env.CLIENT_ORIGIN
+    ?.split(",")
+    .map((origin) => origin.trim())
+    .filter(Boolean);
+
+app.use(cors({
+    origin: allowedOrigins?.length ? allowedOrigins : true,
+    methods: ["GET", "HEAD", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+}));
 app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Hello World!');
