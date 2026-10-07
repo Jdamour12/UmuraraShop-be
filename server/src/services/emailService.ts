@@ -12,7 +12,7 @@ export const sendEmail =  async (to: string, subject: string, html: string) => {
 
     try {
         await resend.emails.send({
-            from: `UmuraraShop <onboarding@resend.dev>`,
+            from: `UmuraraShop <${process.env.EMAIL_USER}>`,
             to,
             subject,
             html
