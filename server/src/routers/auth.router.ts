@@ -26,10 +26,6 @@
  *            password:
  *              type: string
  *              format: password
- *            role:
- *              type: string
- *              enum: [customer, admin]
- *              description: Assigned by the server, defaults to "customer"
  *
  */
 
