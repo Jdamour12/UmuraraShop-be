@@ -27,10 +27,10 @@ export const welcomeEmailTemplate = (name: string) => `
                     <ul style="margin: 0 0 24px; padding-left: 20px; color: #374151;">
                     <li style="margin-bottom: 6px;">Log in with your email and password</li>
                     <li style="margin-bottom: 6px;">Keep your password safe and never share it</li>
-                    <li>Forgot it? Request a reset code anytime</li>
+                    <li>Explore the features and start shopping!</li>
                 </ul>
 
-                    <p style="margin: 0;">Cheers,<br /><strong style="color: #a8791f;">UmuraraShop Team</strong></p>
+                    <p style="margin: 0;">Enjoy,<br /><strong style="color: #a8791f;">UmuraraShop Team</strong></p>
                 </td>
                 </tr>
 
