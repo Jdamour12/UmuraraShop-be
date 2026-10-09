@@ -4,7 +4,7 @@ export const orderReceivedEmailTemplate = (name: string, orderNumber: string) =>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Welcome</title>
+        <title>Order Received</title>
     </head>
     <body style="margin: 0; padding: 0; background-color: #f8f4eb; font-family: Arial, Helvetica, sans-serif;">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #f8f4eb; padding: 40px 16px;">

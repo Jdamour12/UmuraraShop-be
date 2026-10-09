@@ -15,7 +15,7 @@ export const resetEmailTemplate = (name: string, resetCode: string) => `
                 <tr>
                     <td style="background-color: #6b4f1d; border-bottom: 5px solid #d4a843; padding: 40px 32px; text-align: center;">
                         <p style="margin: 0 0 8px; color: #f4d98d; font-size: 13px; letter-spacing: 2px; text-transform: uppercase;">UmuraraShop</p>
-                        <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">Welcome aboard, ${name}!</h1>
+                        <h1 style="margin: 0; color: #ffffff; font-size: 28px; font-weight: bold;">Hello, ${name}!</h1>
                     </td>
                 </tr>
 
