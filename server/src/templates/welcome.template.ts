@@ -30,7 +30,7 @@ export const welcomeEmailTemplate = (name: string) => `
                     <li>Explore the features and start shopping!</li>
                 </ul>
 
-                    <p style="margin: 0;">Enjoy,<br /><strong style="color: #a8791f;">UmuraraShop Team</strong></p>
+                    <p style="margin: 0;">Enjoy your shopping experience,<br /><strong style="color: #a8791f;">UmuraraShop Team</strong></p>
                 </td>
                 </tr>
 
