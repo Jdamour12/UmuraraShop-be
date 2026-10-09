@@ -85,7 +85,7 @@ export const login = async (req:Request, res:Response) => {
         );
 
         return res.status(200).json({
-            message: "Uswer Logged In Successfully.",
+            message: "User Logged In Successfully.",
             token,
             user: {
                 id: user._id,
@@ -123,7 +123,7 @@ export const forgotPassword = async (req:Request, res:Response) => {
 
         await sendResetEmail(email, user.firstName, resetCode);
 
-        return res.status(200).json({message: "Password reset email sent successfully!"});
+        return res.status(200).json({message: "Password reset email sent successfully, if the email exists!"});
     } catch (error) {
         return res.status(500).json({message: "Internal Server Error!"});
     }
