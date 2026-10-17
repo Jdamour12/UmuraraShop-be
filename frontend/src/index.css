@@ -57,3 +57,29 @@ nav ul button:hover {
     color: #000 !important;
     --swiper-navigation-size: 13px;
 }
+
+.homeCatSlider .swiper-button-prev{
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+.homeCatSlider .swiper-button-prev:after{font-size: 18px !important;}
+
+.homeCatSlider .swiper-button-next{
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+.homeCatSlider .item{border: 1px solid rgba(0,0,0,0.1)}
+
+.homeCatSlider .swiper-button-next:after{font-size: 18px !important;}
+
+.homeCatSlider .swiper-button-prev:hover, .homeCatSlider .swiper-button-next:hover{background: #ff5252 !important;}
+
+.homeCatSlider .swiper-button-prev:hover::after, .homeCatSlider .swiper-button-next:hover::after{color: #fff !important;}
+
+.homeCatSlider .item:hover img{
+    transform: scale(1.1);
+}

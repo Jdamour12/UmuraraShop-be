@@ -7,8 +7,8 @@ import "../../App.css"
 
 const HomeSlider = () => {
   return (
-    <div className="homeSlider py-4">
-        <Swiper spaceBetween={20} slidesPerView={1.2} centeredSlides={true} navigation={true} modules={[Navigation]} className="sliderHome">
+    <div className="homeSlider py-4 px-15">
+        <Swiper spaceBetween={20} slidesPerView={1} navigation={true} modules={[Navigation]} className="sliderHome">
           <SwiperSlide>
             <div className="item rounded-[20px] overflow-hidden">
                 <img

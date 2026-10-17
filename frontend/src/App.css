@@ -7,3 +7,36 @@
     height: 500px;
     object-fit: cover;
 }
+
+.homeCatSlider .mySwiper {
+    overflow: visible !important;
+    padding-bottom: 10px;
+}
+
+.homeCatSlider .item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    --swiper-navigation-size: 12px;
+    padding: 8px !important;
+    transition: all 0.3s ease;
+}
+
+.homeCatSlider .swiper-button-prev:hover,
+.homeCatSlider .swiper-button-next:hover {
+    background: #ff5252 !important;
+    --swiper-navigation-color: #fff;
+}
+
+.sliderHome .swiper-button-prev,
+.sliderHome .swiper-button-next {
+    --swiper-navigation-size: 14px;
+    padding: 6px !important;
+}
