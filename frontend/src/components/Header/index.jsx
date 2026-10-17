@@ -48,7 +48,7 @@ function Header() {
       <div className="header py-4 border-b-[1px] border-gray-200">
         <div className="container flex items-center justify-between">
           <div className="col1 w-[25%]">
-            <Link to={"/"} src="/logo.jpg"></Link>
+            <Link to={"/"} ><img src="./logo.jpg" alt="" className="h-[50px] w-[250px]"/></Link>
           </div>
           <div className="col2 w-[45%]">
             <Search />
