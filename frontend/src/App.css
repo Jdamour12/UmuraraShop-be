@@ -1,0 +1,9 @@
+.sliderHome{
+    overflow: visible !important;
+}
+
+.sliderHome img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}

@@ -11,6 +11,7 @@ body{
     font-optical-sizing: auto;
     background: #f5f0f0;
     color: rgba(0,0,0,0.9);
+    overflow-x: hidden;
 }
 .container {
     width: 95%;
@@ -36,4 +37,23 @@ nav ul button{
 
 nav ul button:hover {
     background: none !important;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #fff !important;
+    border-radius: 100% !important;
+    width: 45px !important;
+    height: 45px !important;
+    min-width: 45px !important;
+    --swiper-navigation-size: 13px;
+    --swiper-navigation-color: #000;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 13px !important;
+    color: #000 !important;
+    --swiper-navigation-size: 13px;
 }
